@@ -1,0 +1,15 @@
+.post-filters {
+    padding: 20px 40px;
+    border-radius: $radius;
+    background-color: $partialColor;
+    width: fit-content;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+    margin-top: -120px;
+    margin: -120px auto 40px;
+    position: relative;
+    z-index: 1;
+}

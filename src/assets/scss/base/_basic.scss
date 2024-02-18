@@ -1,0 +1,127 @@
+body {
+    background-color: $bgc;
+}
+
+// FONTS FAMILYT PAIRING
+
+*, .p { 
+    color: $tertiary;
+    font-family: $text;
+    & > * {
+        font-family: inherit;
+    }
+}
+
+h1, h2, .btn, button {
+    font-family: $special;
+}
+
+h3, h4, h5, nav a {
+    font-family: $heading;
+}
+
+// FONT SIZE
+
+* {
+    font-size: 16px;
+    & > * {
+        font-size: inherit;
+    }
+    @media all and (max-width: 767px) {
+        font-size: 14px;
+    }
+    .special {
+        color: $secondary;
+    }
+}
+
+h1, .h1 {
+    font-size: 1.5rem;
+}
+
+h2, .h2 {
+    font-size: 2.2rem;
+}
+
+h3, .h3 {
+    font-size: 1.25rem;
+}
+h4, .h4 {
+    font-size: 1rem;
+}
+
+//SPACING
+
+.l-sec {
+    padding: 35px 20px;
+}
+
+
+.btn {
+
+    &--input {
+        display: block;
+        border: 1px solid $primary;
+        font-family: $text;
+        text-transform: none;
+        font-size: 18px;
+        text-align: left;
+        color: $secondary;
+        transition: .4s ease;
+        &.textarea {
+            resize: none;
+            height: 200px;
+            overflow-y: auto;
+        }
+        &:hover {
+            border-color: $primary;
+        }
+        &:focus, &.complate {
+            border-color: $secondary;
+            color: $primary;
+        }
+    }
+    &--submit {
+        background-color: $primary;
+        color: #fff;
+        transition: .4s ease;
+        &:hover {
+            background-color: $secondary;
+        }
+    }
+    
+    &--search {
+        cursor: text;
+    }
+    &--search, &--seg, &--cat {
+        @media all and (max-width: 767px) {
+            width: 100%;
+        }
+        border: 1px solid $secondary;
+        color: #fff;
+        text-align: left;
+        border-radius: $radius / 3;
+        padding: 10px 20px;
+        text-transform: none;
+        font-family: $heading;
+        &::placeholder {
+            text-transform: none;
+            opacity: 0.6;
+            color: #fff;
+        }
+        &:hover, &:focus {
+            border-color: $secondary;
+        }
+        option {
+            background-color: $partialColor;
+        }
+    }
+}
+
+.img-404 {
+    display: block;
+    margin: 40px auto;
+    border-radius: $radius;
+    object-fit: contain;
+    max-width: 100%;
+}

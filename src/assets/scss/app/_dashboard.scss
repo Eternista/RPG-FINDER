@@ -1,0 +1,56 @@
+.l-sec--dashboard {
+    max-width: 1100px;
+    .row {
+        gap: 20px 0;
+        .col {
+            border-radius: $radius / 3;
+            padding: 20px;
+            background-color: $partialColor;
+            border: 1px solid $secondary;
+            &--userInfo {
+                position: relative;
+                padding-right: 60px;
+                img {
+                    position: absolute;
+                    top: 10px;
+                    right: 10px;
+                    border-radius: 50%;
+                    height: 45px;
+                    width: 45px;
+                    object-fit: cover;
+                    display: block;
+                    margin-left: auto;
+                }
+            }
+            &--friends {
+                .user {
+                    display: flex;
+                    gap: 10px;
+                    padding: 10px 0;
+                    align-items: center;
+                    img {
+                        border-radius: 50%;
+                        height: 50px;
+                        width: 50px;
+                    }
+                }
+                h3,h4 {
+                    margin-bottom: 0;
+                }
+            }
+            &--events {
+                .event {
+                    display: flex;
+                    align-items: center;
+                    gap: 20px;
+                    &_image {
+                        img {
+                            width: 180px;
+                        }
+                    }
+                }
+            }
+        }
+        
+    }
+}

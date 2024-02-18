@@ -1,0 +1,22 @@
+.l-sec--contact {
+
+    .contact-image {
+        img {
+            max-width: 100%;
+        }
+    }
+
+    .contact-form {
+        align-self: center;
+        form {
+            max-width: 500px;
+            padding: 20px;
+            label {
+                width: 100%;
+                .btn--input {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

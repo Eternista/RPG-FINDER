@@ -1,0 +1,14 @@
+.l-sec-about {
+    .about {
+        text-align: center;
+        &-image {
+            margin-bottom: 30px;
+            img {
+                max-width: 100%;
+            }
+        }
+        h2 {
+            margin-bottom: 15px;
+        }
+    }
+}

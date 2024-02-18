@@ -1,0 +1,68 @@
+.event-form {
+    padding: 20px 40px;
+    background-color: #000;
+    border-radius: $radius / 3;
+    border: 1px solid $secondary;
+    margin-bottom: 40px;
+    .wrapper {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        margin: 0px auto;
+        gap: 20px;
+        max-width: 500px;
+        input, select {
+            background-color: #333;
+            &:hover, &:focus {
+                background-color: #333;
+            }
+        }
+        &_name {
+            width: 100%;
+            input {
+                width: 100%
+            }
+        }
+        &_date {
+            width: 100%;
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            p {
+                width: 100%;
+                margin-bottom: 0;
+            }
+            .part {
+                width: calc(50% - 10px);
+                p {
+                    margin-bottom: 10px;
+                }
+                input {
+                    width: 100%;
+                }
+            }
+        }
+    }
+    &--add {
+        label  {
+            display: block;
+            width: 100%;
+            margin-bottom: 20px;
+            input, textarea {
+                resize: none;
+                width: 100%;
+            }
+            textarea {
+                height: 150px;
+            }
+        }
+        .d-flex {
+            gap: 40px;
+            align-items: flex-end;
+            .limit {
+                width: 150px;
+            }
+        }
+    }
+}

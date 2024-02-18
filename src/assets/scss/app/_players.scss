@@ -1,0 +1,25 @@
+.l-sec--players {
+    width: calc(100vw - 280px - 380px);
+    .user {
+        text-align: center;
+        border-radius: $radius;
+        background-color: $partialColor;
+        padding: 20px;
+        img {
+            border-radius: 50%;
+            height: 75px;
+            width: 75px;
+        }
+        &_image {
+            margin-bottom: 20px;
+        }
+        &_text {
+            h3 {
+                margin-bottom: 10px;
+            }
+            .btn {
+                margin-top: 20px;
+            }
+        }
+    }
+}
